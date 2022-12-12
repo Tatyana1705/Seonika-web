@@ -1,0 +1,140 @@
+.contacts {
+    @media (min-width: $desktop) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 60%;
+    }
+}
+
+.contacts__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+
+    @media (min-width: $desktop) {
+        flex-direction: column;
+        align-items: flex-end;
+        margin-bottom: 20px;
+    }
+}
+
+.contacts__logo img {
+    @media (min-width: $tablet) {
+        width: 157px;
+        height: 81px;
+    }
+
+    @media (min-width: $desktop) {
+        width: 178px;
+        height: 92px;
+        margin-bottom: 20px;
+    }
+}
+
+.contacts__tme {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #4953AA;
+    border-radius: 50px;
+    box-shadow:  inset 0px 2px 0px #FFFFFF;
+    transition: background-color 0.35s ease-in-out;
+
+    &:hover {
+        @media (hover: hover) {
+            background-color: #9177D7;
+        }
+    }
+
+    &:active {
+            color: #9177D7;
+    }
+
+    & svg {
+        width: 27px;
+        height: 20px;
+    }
+
+    @media (min-width: $desktop) {
+        width: 65px;
+        height: 65px;
+
+        & svg {
+            width: 37px;
+            height: 30px;
+        }
+    }
+}
+
+.contacts__mail {
+    @include default-link;
+    display: block;
+    font-size: 21px;
+    color: #7785FF;
+    margin-bottom: 30px;
+    transition: color 0.2s linear;
+
+    &:hover {
+        @media (hover: hover) {
+            color: #FFFFFF;
+        } 
+    }
+
+    &:active {
+        color: #FFFFFF;
+    }
+
+    @media (min-width: $tablet) {
+        margin-bottom: 60px;
+    }
+}
+
+.contacts__documents {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+
+    & a {
+        @include default-link;
+        width: 90%;
+        margin-bottom: 20px;
+        font-size: 21px;
+        color: #FFFFFF;
+        transition: color 0.2s linear;
+
+        &:hover {
+            @media (hover: hover) {
+                color: #7785FF;
+            } 
+        }
+    
+        &:active {
+            color: #7785FF;
+        }
+    }
+
+    @media (min-width: $desktop) {
+        align-items: flex-end;
+
+        & a {
+            text-align: right;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.contacts__copyright {
+    margin: 0;
+    font-weight: 400;
+    font-size: 18px;
+    color: #444A92;
+
+    @media (min-width: $desktop) {
+        font-size: 21px;
+        text-align: right;
+    }
+}

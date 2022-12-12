@@ -1,0 +1,85 @@
+.address {
+    margin: 0;
+    margin-bottom: 60px;
+    padding: 0;
+    width: 100%;
+
+    @media (min-width: $tablet) {
+        margin-bottom: 100px;
+        padding-top: 15px;
+    }
+}
+
+.address__subtitle {
+    margin: 0;
+    margin-bottom: 60px;
+    font-weight: 400;
+    font-size: 20px;
+    color: #3B70AE;
+
+    @media (min-width: $tablet) {
+        font-size: 23px; 
+        margin-bottom: 52px;
+    }
+
+    @media (min-width: $desktop) {
+        margin-bottom: 32px;
+    }
+}
+
+.address__address {
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 25px;
+
+    @media (min-width: $tablet) {
+        margin-bottom: 20px; 
+    }
+}
+
+.address__mail {
+    @include default-link;
+    display: block;
+    font-size: 21px;
+    color: #7785FF;
+    margin-bottom: 60px;
+    transition: color 0.2s linear;
+
+    &:hover {
+        @media (hover: hover) {
+            color: #FFFFFF;
+        } 
+    }
+
+    &:active {
+        color: #FFFFFF;
+    }
+
+    @media (min-width: $tablet) {
+        margin-bottom: 55px;
+        font-size: 25px;
+    }
+
+    @media (min-width: $desktop) {
+        width: 20%;
+        margin-bottom: 60px;
+    }
+}
+
+.address__mup {
+    width: 100%;
+    height: 186px;
+
+    & iframe {
+        width: 100%;
+        height: 100%;
+    }
+
+    @media (min-width: $tablet) {
+        height: 347px; 
+    }
+
+    @media (min-width: $desktop) {
+        height: 499px;
+    }
+}

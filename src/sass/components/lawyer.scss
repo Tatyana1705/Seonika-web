@@ -1,0 +1,102 @@
+.lawyer {
+    padding-top: 30px;
+
+    @media (min-width: $tablet) {
+        padding-top: 20px; 
+    }
+
+    @media (min-width: $desktop) {
+        padding-top: 50px;
+    }
+}
+
+.lawyer__title {
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 700;
+
+    @media (min-width: $tablet) {
+        font-size: 45px; 
+    }
+
+    @media (min-width: $desktop) {
+        margin-bottom: 60px;
+        font-size: 70px; 
+    }
+}
+
+.lawyer__date {
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 20px;
+    text-align: center;
+    color: #96CDFF;
+
+    @media (min-width: $tablet) {
+        font-size: 25px; 
+    }
+
+    @media (min-width: $desktop) {
+        margin-bottom: 60px;
+        font-size: 40px;
+    }
+}
+
+.lawyer__text {
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 140%;
+
+    & span {
+        font-weight: 700;
+    }
+
+    @media (min-width: $tablet) {
+        font-size: 18px; 
+    }
+
+    @media (min-width: $desktop) {
+        margin-bottom: 60px;
+        font-size: 25px;
+    }
+}
+
+.lawyer__subtitle {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #96CDFF;
+
+    @media (min-width: $tablet) {
+        font-size: 25px;
+    }
+
+    @media (min-width: $desktop) {
+        margin-bottom: 20px;
+        font-size: 40px;
+    }
+}
+
+.lawyer__requisites {
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 140%;
+    text-transform: uppercase;
+
+    & span {
+        font-weight: 700;
+    }
+
+    @media (min-width: $tablet) {
+        font-size: 18px; 
+    }
+
+    @media (min-width: $desktop) {
+        margin-bottom: 60px;
+        font-size: 25px;
+    }
+}

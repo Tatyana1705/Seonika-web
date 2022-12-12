@@ -1,0 +1,53 @@
+.module {
+    padding: 30px 20px;
+    margin-left: 7px;
+    background-color: #302F45;
+    box-shadow: -7px 7px 0px #5DA6E1;
+    border-radius: 10px;
+    transition: background-color 0.2s linear;
+
+    &:nth-last-child(n+2) {
+        margin-bottom: 60px;
+    }
+
+    &:hover {
+        @media (hover: hover) {
+            background-color: #4953AA;    
+        }
+    }
+
+    &:active {
+        background-color: #4953AA;
+    }
+
+    @media (min-width: $tablet) {
+
+        &:nth-last-child(n+2) {
+            margin-bottom: 0;
+        }
+    }
+
+    @media (min-width: $desktop) {
+        padding: 40px 20px;
+    }
+  }
+
+  .module__item {
+    & h3 {
+        margin: 0;
+        margin-bottom: 20px;
+        padding-bottom: 5px;
+        font-size: 20px;
+        text-transform: uppercase;
+        border-bottom: 2px solid #5DA6E1;
+
+        @media (min-width: $desktop) {
+            margin-bottom: 30px; 
+        }
+    }
+}
+
+.module__text {
+    margin: 0;
+    margin-bottom: 30px;
+}

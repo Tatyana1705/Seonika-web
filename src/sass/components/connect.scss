@@ -1,0 +1,41 @@
+.connect {
+    @media (min-width: $desktop) {
+        display: flex; 
+        align-items: center;
+    }
+}
+
+.connect__mail {
+    display: none;
+    transition: color 0.2s linear;
+
+    &:hover {
+        @media (hover: hover) {
+            color: #FFFFFF;    
+        }
+    }
+
+    &:active {
+        color: #FFFFFF;
+    }
+
+    @media (min-width: $desktop) {
+        opacity: 1;
+    }
+
+    @media (min-width: $desktop) {
+        display: block;
+        color: #7785FF;
+        font-size: 21px;
+        text-decoration: none;
+        margin-right: 17px;
+    }
+}
+
+.connect__btn {
+    display: none;
+
+    @media (min-width: $desktop) {
+        display: block;
+    }
+}

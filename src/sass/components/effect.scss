@@ -1,0 +1,23 @@
+.effect {
+padding-top: 60px;
+
+    @media (min-width: $tablet) {
+        display: flex;
+    }
+
+    @media (min-width: $desktop) {
+        padding-top: 80px;
+    }
+}
+
+.effect__content {
+    margin-bottom: 50px;
+
+    @media (min-width: $tablet) {
+        margin-bottom: 80px; 
+    }
+
+    @media (min-width: $desktop) {
+        margin-bottom: 100px;
+    }
+}

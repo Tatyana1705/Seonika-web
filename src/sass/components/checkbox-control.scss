@@ -1,0 +1,56 @@
+.checkbox-control {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    .checkbox-control__mark,
+    .checkbox-control__label {
+        transition: border-color 0.2s linear, color 0.2s linear;
+    }
+    
+    &:hover .checkbox-control__mark {
+        @media (hover: hover) {
+            border-color: #6F7DFF;
+        }
+    }
+
+    &:hover .checkbox-control__label {
+        @media (hover: hover) {
+            color: #6F7DFF;
+        }
+    }
+}
+
+.checkbox-control__mark {
+    flex-shrink: 0;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    box-sizing: border-box;
+    border: 2px solid rgba(205, 205, 205, 1);
+    border-radius: 5px;
+
+    &::before {
+        position: absolute;
+        content: "";
+        width: 27px;
+        height: 26px;
+        background-image: url("../img/control__mark.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 0;
+        transition: color 0.1s linear, opacity 0.1s linear;
+    }
+}
+
+.checkbox-control__input:checked ~ .checkbox-control__mark {
+    border-color: #6F7DFF;
+
+    &::before {
+        opacity: 1;
+    }
+}
+
+.checkbox-control__input:checked ~ .checkbox-control__label {
+    color: #6F7DFF;
+}

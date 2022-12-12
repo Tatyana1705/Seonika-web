@@ -1,0 +1,43 @@
+.pluses {
+    margin-bottom: 60px;
+
+    @media (min-width: $tablet) {
+        display: flex;
+        margin-bottom: 80px;
+    }
+
+    @media (min-width: $desktop) {
+        margin-bottom: 100px;
+    }
+}
+
+.pluses__title {
+    margin: 0;
+    margin-bottom: 60px;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #96CDFF;
+
+    @media (min-width: $tablet) {
+        margin-bottom: 80px;
+        font-size: 50px;
+    }
+
+    @media (min-width: $desktop) {
+        margin-bottom: 60px;
+    }
+}
+
+.pluses__list {
+    @include list-reset;
+
+    @media (min-width: $tablet) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    @media (min-width: $desktop) {
+        gap: 60px;
+    }
+}

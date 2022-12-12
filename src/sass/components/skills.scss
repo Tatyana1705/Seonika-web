@@ -1,0 +1,118 @@
+.skills {
+    @media (min-width: $tablet) {
+        display: flex;
+    }
+}
+
+.skills__wrap {
+    @media (min-width: $tablet) {
+        margin-bottom: 20px;
+    } 
+
+    @media (min-width: $desktop) {
+        display: flex;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+}
+
+.skills__content {
+    margin-bottom: 60px;
+
+    @media (min-width: $desktop) {
+        margin-bottom: 0;
+        margin-right: 125px;
+    }
+}
+
+.skills__title {
+    @include title;
+    margin-bottom: 20px;
+    color: #96CDFF;
+
+    &--about {
+        font-size: 24px
+    }
+
+    @media (min-width: $desktop) {
+        margin-bottom: 50px;
+    }
+}
+
+.skills__text {
+    margin: 0;
+    margin-bottom: 30px;
+
+    @media (min-width: $desktop) {
+        margin-bottom: 40px;
+    }
+}
+
+.skills__link {
+    @include link-reset;
+}
+
+.skills__list {
+    @include list-reset;
+
+    @media (min-width: $tablet) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    @media (min-width: $desktop) {
+        gap: 20px;
+    }
+}
+
+.skills__item {
+    margin-bottom: 60px;
+    padding-left: 86px;
+    background-repeat: no-repeat;
+
+    & h3 {
+        @include default-subtitle;
+        margin-bottom: 20px;
+    }
+
+    &--team {
+        background-image: url("../img/team.svg");
+    }
+
+    &--audit {
+        background-image: url("../img/audit.svg");
+    }
+
+    &--strategy {
+        background-image: url("../img/strategy.svg");
+    }
+
+    &--report {
+        background-image: url("../img/report.svg");
+    }
+
+    &--deadline {
+        background-image: url("../img/deadline.svg");
+    }
+
+    &--contract {
+        background-image: url("../img/contract.svg");
+    }
+
+    @media (min-width: $tablet) {
+        margin-bottom: 60px;
+    }
+
+    @media (min-width: $desktop) {
+        margin-bottom: 40px;
+        padding-top: 120px;
+        padding-left: 0;
+        background-size: 100px 100px;
+
+        & h3 {
+            @include default-subtitle;
+            margin-bottom: 10px;
+        }
+    }
+}

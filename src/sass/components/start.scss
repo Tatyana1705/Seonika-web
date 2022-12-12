@@ -1,0 +1,155 @@
+.start {
+
+    @media (min-width: $tablet) {
+        display: flex;
+    }
+}
+
+.start__element {
+    @media (min-width: $tablet) {
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+
+.start__tme {
+    display: none;
+
+    @media (min-width: $tablet) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        background-color: #4953AA;
+        border-radius: 50px;
+        box-shadow:  inset 0px -2px 0px #FFFFFF;
+        transition: background-color 0.35s ease-in-out;
+        z-index: 2;
+
+        &:hover {
+            @media (hover: hover) {
+                background-color: #9177D7;
+            }
+        }
+
+        &:active {
+            color: #9177D7;
+        }
+
+        & svg {
+            width: 27px;
+            height: 20px;
+        }
+
+        @media (min-width: $desktop) {
+            width: 65px;
+            height: 65px;
+
+            & svg {
+                width: 37px;
+                height: 30px;
+            }
+        }
+    }
+}
+
+.start__content {
+    margin-bottom: 60px;
+    padding-bottom: 384px;
+    background-repeat: no-repeat;
+    background-size: 324px auto;
+    background-position: center bottom;
+
+    &--seo {
+        background-image: url("../img/seo-start.png");
+    }
+
+    &--serm {
+        background-image: url("../img/serm-start.png");
+    }
+
+    &--web {
+        background-image: url("../img/web-start.png");
+    }
+
+    &--audit {
+        background-image: url("../img/audit-start.png");
+    }
+
+    &--about {
+        background-image: url("../img/about-start.png");
+    }
+
+    @media (min-width: $tablet) {
+        margin-bottom: 100px;
+        padding-bottom: 660px;
+        padding-top: 15px;
+        background-size: 603px auto;
+    }
+
+    @media (min-width: $desktop) {
+        margin-bottom: 200px;
+        padding-top: 20px;
+        padding-bottom: 0;
+        padding-right: 530px;
+        background-size: 505px auto;
+        background-position: right center;
+
+        &--serm {
+            padding-right: 450px;
+        }
+    }
+}
+
+.start__subtitle {
+    margin: 0;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 20px;
+    color: #3B70AE;
+
+    @media (min-width: $tablet) {
+        font-size: 23px; 
+        margin-bottom: 67px;
+    }
+}
+
+.start__title {
+    margin: 0;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 40px;
+    text-transform: uppercase;
+
+    @media (min-width: $tablet) {
+        font-size: 64px;
+        margin-bottom: 20px;
+    }
+
+    @media (min-width: $desktop) {
+        font-size: 65px;
+    }
+}
+
+.start__text {
+    margin: 0;
+    margin-bottom: 40px;
+    font-size: 18px;
+
+    @media (min-width: $desktop) {
+        margin-bottom: 60px;
+    }
+}
+
+.start__button {
+    @media (min-width: $tablet) {
+        width: 50%;
+        padding: 20px;
+    }
+
+    @media (min-width: $desktop) {
+        width: fit-content;
+        padding: 25px 35px;
+    }
+}

@@ -1,0 +1,54 @@
+.services {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-image: linear-gradient(180deg, #0A0B13 0%, #273260 100%);
+
+    @media (min-width: $tablet) {
+        padding-bottom: 80px;
+    }
+
+    @media (min-width: $desktop) {
+        padding-top: 80px;
+        padding-bottom: 100px;
+    }
+}
+
+.services__wrap {
+    @media (min-width: $tablet) {
+        display: flex;
+    }
+}
+
+.services__title {
+    @include title;
+    margin-bottom: 50px;
+}
+
+.services__list {
+    @include list-reset;
+
+    @media (min-width: $tablet) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+.services__link {
+    @include link-reset;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    color: #FFFFFF;
+}
+
+.services__detailed {
+    width: fit-content;
+    margin: 0;
+    margin-top: auto;
+    padding-right: 34px;
+    text-transform: uppercase;
+    background-image: url("../img/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+}

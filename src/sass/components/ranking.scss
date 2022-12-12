@@ -1,0 +1,61 @@
+.ranking {
+    background-image: linear-gradient(180deg, #0A0B13 0%, #273260 100%);
+    padding-top: 60px;
+    padding-bottom: 67px;
+
+    @media (min-width: $tablet) {
+        padding-bottom: 87px;
+    }
+
+    @media (min-width: $desktop) {
+        padding-top: 80px;
+        padding-bottom: 107px; 
+    }
+}
+
+.ranking__wrap {
+    @media (min-width: $tablet) {
+        display: flex;
+    }
+}
+
+.ranking__title {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 40px;
+    text-transform: uppercase;
+
+    @media (min-width: $tablet) {
+        font-size: 50px;
+    }
+}
+
+.ranking__text {
+    margin: 0;
+    margin-bottom: 50px;
+
+    @media (min-width: $tablet) {
+        margin-bottom: 80px;
+    }
+
+    @media (min-width: $desktop) {
+        width: 65%;
+        font-size: 24px;
+        margin-bottom: 60px;
+    }
+}
+
+.ranking__list {
+    @include list-reset;
+
+    @media (min-width: $tablet) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    @media (min-width: $desktop) {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px;
+    }
+}

@@ -1,0 +1,77 @@
+.seo-property {
+    margin-bottom: 60px;
+
+    @media (min-width: $tablet) {
+        margin-bottom: 80px; 
+    }
+
+    @media (min-width: $desktop) {
+        display: flex;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+}
+
+.seo-property__title {
+    margin: 0;
+    margin-bottom: 40px;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #96CDFF;
+
+    @media (min-width: $tablet) {
+        margin-bottom: 80px;
+        font-size: 50px;  
+    }
+
+    @media (min-width: $desktop) {
+        width: 40%;
+        margin-right: 60px;
+        margin-bottom: 0;
+    }
+}
+
+.seo-property__list {
+    @include list-reset;
+
+    @media (min-width: $desktop) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+}
+
+.seo-property__item {
+    margin-bottom: 20px;
+    padding: 20px 0 20px 86px;
+    background-repeat: no-repeat;
+    background-position: left center;
+
+    &--query {
+        background-image: url("../img/query.svg");
+    }
+
+    &--target {
+        background-image: url("../img/target.svg");
+    }
+
+    &--view {
+        background-image: url("../img/view.svg");
+    }
+
+    &--refused {
+        background-image: url("../img/refused.svg");
+    }
+
+    @media (min-width: $tablet) {
+        margin-bottom: 30px;
+    }
+
+    @media (min-width: $desktop) {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding-left: 120px;
+        background-size: 100px auto;
+    }
+}
